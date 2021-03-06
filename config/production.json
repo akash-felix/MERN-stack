@@ -1,0 +1,6 @@
+{
+    "mongoURI":"mongodb+srv://akash:akash@devconnector.etsdj.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "jwtSecret":"mysecrettoken",
+    "githubclientId":"603200fe5b29ed23fcd268ba",
+    "githubSecret":"44ef0657b812966b2ab9298b9bdbc5648dfbf69"
+}
