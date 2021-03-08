@@ -1,3 +1,4 @@
+const normalize = require('normalize-url');
 const express = require('express');
 const router = express.Router();
 const request=require('request');
@@ -64,7 +65,7 @@ router.post(
     if(status)profilefields.website=status;
     if(githubusername)profilefields.website=githubusername;
     if(skills){
-        profilefields.skills=skills.split(',').map(skill=>skill.trim());
+        profilefields.skills=skills.split(',').map((skill)=>skill.trim());
     } 
     profilefields.social={};
     if(youtube) profilefields.social.youtube=youtube;

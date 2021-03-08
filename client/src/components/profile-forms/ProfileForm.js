@@ -60,9 +60,9 @@ const ProfileForm = ({
     instagram
   } = formData;
 
-  const onChange = e =>
+  const onChange = e =>{
     setFormData({ ...formData, [e.target.name]: e.target.value });
-
+  }
   const onSubmit = e => {
     e.preventDefault();
     createProfile(formData, history, profile ? true : false);
